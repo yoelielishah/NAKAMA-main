@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>NakamaLMS Sign In</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
+    <!--Javascript -->
+    <script>
+        function redirectToHomepage() {
+            window.location.href = "lmshomepage.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="login-container">
+        <div class="login-logo">
+            <img src="images/nakamalogo.jpg" alt="NakamaLMS Logo">
+        </div>
+        <h1>Sign in to NakamaLMS</h1>
+        <button class="google-signin">
+            <img src="images/google-logo.avif" alt="Google Logo">
+            Continue with Google
+        </button>
+        <div class="separator">or</div>
+        <form action="signup.php" method="POST" onsubmit="redirectToHomepage()">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"   placeholder="Password" required>
+            <button type="submit" class="login-button">Log in</button>
+        </form>
+        <div class="links">
+            <a href="resetpassword.html">Reset password</a>
+        </div>
+        <div class="signup">
+            No account? <a href="createacc.html">Create one</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

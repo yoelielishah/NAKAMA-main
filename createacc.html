@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account - NakamaLMS</title>
+    <link rel="stylesheet" href="createacc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="form-container">
+        <div class="form-logo">
+            <img src="images/nakamalogo.jpg" alt="NakamaLMS Logo">
+        </div>
+        <h1>Create Account</h1>
+        <form method="post" action="createacc.php">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="full_name" placeholder="Full Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"  placeholder="Email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password"  name="password"   placeholder="Password"  required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password"  placeholder="Confirm Password">
+            <button type="submit" class="submit-button">Create Account</button>
+        </form>
+        <div class="links">
+            <a href="signup.html">Back to Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

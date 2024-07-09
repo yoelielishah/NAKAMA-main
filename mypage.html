@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="mypage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>LMS</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> Tasks</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="header-content">
+                    <h2>Welcome, [User Name]</h2>
+                    <div class="header-icons">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="section activities">
+                    <h3>Recent Activities</h3>
+                    <div class="activity-card">
+                        <p>You have applied for the course "Advanced CSS Techniques".</p>
+                        <p><i class="fas fa-calendar-alt"></i> Date: July 4, 2024</p>
+                    </div>
+                </div>
+
+                <div class="section notifications">
+                    <h3>Notifications</h3>
+                    <div class="notification-card">
+                        <p>Your application for "Advanced CSS Techniques" is being processed.</p>
+                    </div>
+                </div>
+
+                <div class="section schedule">
+                    <h3>Upcoming Schedule</h3>
+                    <div class="schedule-card">
+                        <p><i class="fas fa-calendar-alt"></i> July 5, 2024 - Orientation Session for "Advanced CSS Techniques".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

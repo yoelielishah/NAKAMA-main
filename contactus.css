@@ -1,0 +1,187 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Fallback color */
+    background-image: url('images/pexels-pixabay-159775.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Section styles */
+section#banner-2 {
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Logo styles */
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Contact form styles */
+.contact-us-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-us-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-input {
+    margin-bottom: 20px;
+}
+
+.contact-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-input input,
+.contact-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.select-reasons {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.select-reasons select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.form-msg {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-msg textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.submit-btn button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+    background-color: #45a049;
+}
+
+.contact-email {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-email p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-email a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Side navigation styles */
+#sideNav {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+#sideNav nav {
+    padding-top: 50px;
+}
+
+#sideNav ul {
+    list-style-type: none;
+}
+
+#sideNav ul li {
+    padding: 15px 20px;
+}
+
+#sideNav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#sideNav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Menu button styles */
+#menuBtn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+}
+
+#menuBtn img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-us-form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,405 @@
+
+
+
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2024 Nakama Company, Inc</p>
+    </footer>
+  </div>
+
+  <!--registration-->
+
+<section id="registration">
+  <div class="registration-form">
+      <h1><b>Registration Form</b></h1>
+  <!--<form method="post" action = "<?php $_PHP_SELF ?>"> -->
+      <form method = "post" action="/nakamalms.php" > 
+          <fieldset>
+              <legend><b><i>Personal Information</i></b></legend>
+              <label for="fname">Enter your First Name :</label>
+              <input type="text" id="fname" name="First_Name" placeholder="First Name"   required>
+              <label for="mname">Enter your Middle Name :</label>
+              <input type="text" id="mname" name="Middle_Name" placeholder="Middle Name"  >
+              <label for="lname">Enter Your Last Name :</label>
+              <input type="text" id="lname" name="Last_Name" placeholder="Last Name" required>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="Email"  required>
+              
+              <!-- <p><b>Enter your birth date</b></p> -->
+
+              <label for="birthdate"><b>Your Birthdate</b></label>
+              <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+             <!--
+              <p>Alternative ways of selecting your birthdate</p>
+              <label for="day">Day</label>
+              <input type="number" id="day" name="day" min="1" max="31">
+              <label for="month">Month</label>
+              <select id="month" name="month">
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+              </select>
+              <label for="year">Year</label>
+              <input type="number" id="year" name="year" min="1900" max="3000">
+          </fieldset>
+              -->
+
+              <fieldset>
+                  <legend><b><i>Education Level</i></b></legend>
+                  
+                  <p>Select Your Level Of Education :</p>
+                  
+                  <!-- Checkbox Buttons -->
+                  <div class="checkbox-group">
+                      <label for="PHD"><b>PHD</b></label>
+                      <input type="checkbox" id="PHD" name="Education[]" value="PHD">
+                  </div>
+                  <div class="checkbox-group">
+                      <label for="Masters"><b>Masters</b></label>
+                      <input type="checkbox" id="Masters" name="Education[]" value="Masters">
+                  </div>
+                  <div class="checkbox-group">
+                      <label for="Degree"><b>Degree</b></label>
+                      <input type="checkbox" id="Degree" name="Education[]" value="Degree">
+                  </div>
+                  <div class="checkbox-group">
+                      <label for="Diploma"><b>Diploma</b></label>
+                      <input type="checkbox" id="Diploma" name="Education[]" value="Diploma">
+                  </div>
+                  <div class="checkbox-group">
+                      <label for="Certificate"><b>Certificate</b></label>
+                      <input type="checkbox" id="Certificate" name="Education[]" value="Certificate">
+                  </div>
+                  <div class="checkbox-group">
+                      <label for="Other"><b>Other</b></label>
+                      <input type="checkbox" id="Other" name="Education[]" value="Other">
+                  </div>
+              </fieldset>
+
+
+          <fieldset>
+              <legend><b><i>Departments</i></b></legend>
+              <p>Select your Department(s)</p>
+              
+              <!-- Radio Buttons -->
+              <div class="radio-group">
+              
+                  <label for="Managerial_Department"><b>Managerial Department</b></label>
+                  <input type="radio" id="Managerial_Department" name="department" value="Managerial Department">
+              
+              </div>
+              <div class="radio-group">
+              
+                  <label for="Heads_of_Operation_Department"><b>Heads of Operation Department</b></label>
+                  <input type="radio" id="Heads_of_Operation_Department" name="department" value="Heads of Operation Department">
+              
+              </div>
+              <div class="radio-group">
+              
+                  <label for="Human_Resource_Management_Department"><b>Human Resource Management Department</b></label>
+                  <input type="radio" id="Human_Resource_Management_Department" name="department" value="Human Resource Management Department">
+              
+              </div>
+              <div class="radio-group">
+              
+                  <label for="Administration_Department"><b>Administration Department</b></label>
+                  <input type="radio" id="Administration_Department" name="department" value="Administration Department">
+              
+              </div>
+              <div class="radio-group">
+              
+                  <label for="Sales_Department"><b>Sales Department</b></label>
+                  <input type="radio" id="Sales_Department" name="department" value="Sales Department">
+              
+              </div>
+              <div class="radio-group">
+              
+                  <label for="Marketing_Department"><b>Marketing Department</b></label>
+                  <input type="radio" id="Marketing_Department" name="department" value="Marketing Department">
+              
+              </div>
+              <div class="radio-group">
+
+                  <label for="Software_Department"><b>Software Department</b></label>
+                  <input type="radio" id="Software_Department" name="department" value="Software Department">
+
+              </div>
+              <div class="radio-group">
+          
+                  <label for="IT_Department"><b>IT Department</b></label>
+                  <input type="radio" id="IT_Department" name="department" value="IT Department">
+              
+              </div>
+              <div class="radio-group">
+
+                  <label for="Finance_Department"><b>Finance Department</b></label>
+                  <input type="radio" id="Finance_Department" name="department" value="Finance Department">
+
+              </div>
+          </fieldset>
+
+
+              <div class="form-msg">
+                  <p>Skills</p>
+                  <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Please specify your skills..."></textarea>
+              </div>
+
+              <p>Attach your file document(s) in a single file below:</p>
+              <label for="myfile">Attach file:</label>
+              <input type="file" id="myfile" name="myfile">
+          </fieldset>
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+      </form>
+  </div>
+  <div class="social-links">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-youtube-play"></i>
+      <p>Follow us on our social media handles</p>
+  </div>
+</section>
+
+
+/*--registration--*/
+
+/* Main form section */
+#registration {
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(to right, #3a5e5f 0%, #3a5e5f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Form container */
+.registration-form {
+    width: 80%;
+    max-width: 600px;
+    background: url('images/pexels-junior-teixeira-1064069-2047905.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+    text-align: left;
+    position: relative; 
+    z-index: 1;
+    /* To make text readable over the image */
+}
+
+/* Form text styling */
+.registration-form * {
+    position: relative;
+    z-index: 2; /* Make sure text is above the background image */
+}
+
+.registration-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* readability between image and form texts */
+    border-radius: 10px;
+    z-index: 1; /* Below the text but above the background image */
+}
+
+.registration-form h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.registration-form p {
+    font-size: 15px;
+    margin: 15px 0;
+    color: #efefef;
+}
+
+.registration-form label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    color: #1e2cac;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="file"] {
+    padding: 5px;
+}
+
+.registration-form input[type="submit"],
+.registration-form input[type="reset"] {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 48%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="submit"]:hover,
+.registration-form input[type="reset"]:hover {
+    background-color: #00796b;
+}
+
+.registration-form input[type="reset"] {
+    background-color: #f44336;
+}
+
+.registration-form input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+.registration-form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #dddddd49;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.registration-form fieldset legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-msg textarea {
+    resize: vertical;
+}
+
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-links i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #555;
+    cursor: pointer;
+}
+
+.social-links p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #06aa06;
+}
+
+/* Radio and Checkbox Group Styles */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .registration-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .registration-form input[type="submit"],
+    .registration-form input[type="reset"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+  <?php
+$servername ="localhost";
+$username ="NakamaLMS";
+$password ="@onlinelms7";
+$dbname ="nakamalms";
+$val1=$_POST['First_Name'];
+$val2=$_POST['Middle_Name'];
+$val3=$_POST['Last_Name'];
+$val4=$_POST['email'];
+$val5=$_POST['birthdate'];
+$val6=$_POST['Education'];
+$val7=$_POST['department'];
+$val8=$_POST['msg'];
+$val9=$_POST['myfile'];
+
+$conn = new mysqli($servername,$username,$password,$dbname);
+
+if($conn->connect_error)
+   {
+    die ("Connection Failed." .$conn->connect_error);
+   }
+ $sql = "INSERT INTO Form_Registration (First_Name, Middle_Name, Last_Name, Email_Address, Birthdate, Level_of_Education,
+                                        Departments, Skills, Attach_Files)
+ VALUES ('$val1','$val2','$val3','$val4','$val5','$val6','$val7','$val8','$val9')";
+
+if ($conn->query($sql) === TRUE )
+   {
+    echo "Registration details inserted successfully";
+   }
+else 
+   {
+    echo "Error." .$sql ."<br>" .$conn->error; 
+   }
+$conn->close();
+?>
+
+
+
+

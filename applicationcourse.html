@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application Form - Nakama LMS</title>
+    <link rel="stylesheet" href="applicationcourse.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/nakamalogo.jpg" alt="Nakama LMS Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="mydashboard.html">Home</a></li>
+                    <li><a href="#form-section">Apply</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="form-section">
+        <div class="form-container">
+            <h1>Apply for a Course</h1>
+            <p>Fill out the form below to apply for a course at Nakama LMS.</p>
+            <form action="applicationcourse.php"  method="post" enctype="multipart/form-data">
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="First_Name" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mname">Middle Name:</label>
+                            <input type="text" id="mname" name="Middle_Name" placeholder="Middle Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="Last_Name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthdate">Birthdate:</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Course Selection Section -->
+                <fieldset>
+                    <legend><b>Course Selection</b></legend>
+                    <div class="form-row">
+                        <label for="course">Select a Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="Chatbot and AI Integration" name="course">Chatbot and AI Integration</option>
+                            <option value="Workflow Automation" name="course" >Workflow Automation</option>
+                            <option value="Digitization Services" name="course" >Digitization Services</option>
+                            <option value="Fintech Solutions" name="course" >Fintech Solutions</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information Section -->
+                <fieldset>
+                    <legend><b>Additional Information</b></legend>
+                    <div class="form-row">
+                        <label for="skills">Skills:</label>
+                        <textarea id="skills" name="skills" placeholder="Please specify your skills..." required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="attach">Attach a Resume:</label>
+                        <input type="file" id="attach" name="attachment" >
+                    </div>
+                </fieldset>
+
+                <!-- Action Buttons -->
+                <div class="form-actions">
+                    <input type="submit" value="Submit Application">
+                    <input type="reset" value="Reset Form">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Nakama LMS. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
